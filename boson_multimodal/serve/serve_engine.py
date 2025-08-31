@@ -266,7 +266,7 @@ class HiggsAudioServeEngine:
             audio_stream_bos_id=self.model.config.audio_stream_bos_id,
             audio_stream_eos_id=self.model.config.audio_stream_eos_id,
             pad_token_id=self.model.config.pad_token_id,
-            return_audio_in_tokens=False,
+            return_audio_in_tokens=True,
             use_delay_pattern=self.model.config.use_delay_pattern,
             audio_num_codebooks=self.model.config.audio_num_codebooks,
             round_to=1,
